@@ -1,8 +1,8 @@
 from typing import List,Tuple
 import random
-import map_controller
-from utility import *
-from battle import Battle
+from . import map_controller
+from .utility import *
+from .battle import Battle
 class AI_Controller:
     def __init__(self):
         pass

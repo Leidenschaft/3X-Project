@@ -9,5 +9,7 @@
 * pyglet
 * cocos32d
 * numpy
+## How to run
 
+`python3 main_display.py`
 

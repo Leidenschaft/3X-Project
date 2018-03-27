@@ -7,7 +7,7 @@ import pyglet
 from cocos.director import director
 from cocos.menu import Menu, MenuItem, zoom_in, zoom_out
 from cocos.scene import Scene
-from display_item.arena import new_game, load_game, map_init
+from src.display_item.arena import new_game, load_game, map_init
 
 class Main(Menu):
 
@@ -34,7 +34,7 @@ class Main(Menu):
 
 
 if __name__ == '__main__':
-    pyglet.resource.path = ['../img']
+    pyglet.resource.path = ['./img']
     pyglet.resource.reindex()
     director.init(caption='3X-Project', width=1280, height=720)
     director.run(Scene(Main(map_init())))

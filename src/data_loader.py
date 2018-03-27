@@ -38,14 +38,26 @@ class Main:
         path=self.get_root("data")
         return json.load(open(path+fname,"r"))
     def get_root(self,directory):
+        """
+        get the root path (current working directory) of the project, appended with directory
+
+        Parameters
+        -----------
+        directory : directory to append to root_path
+
+        Returns
+        ----------
+        path : root_path/directory
+        """
         ostype = platform.platform()
         path = os.getcwd()
+        # resolve path
         if path[-3:]=="src":
             path=path[:-3]
         else:
             if ostype[:7]=="Windows":
                 path=path+"\\"
-            else:
+            else: #linux
                 path=path+"/"
         if ostype[:7] == "Windows":
             path = path + directory+"\\"

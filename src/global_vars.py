@@ -1,14 +1,14 @@
 from typing import Dict, List
-import terrain
-import cls
-import person
-import ai_controller
-import itemtype
-import item
-import data_loader
-import terrain_container
-import person_container
-import map_controller
+from . import terrain
+from . import cls
+from . import person
+from . import ai_controller
+from . import itemtype
+from . import item
+from . import data_loader
+from . import terrain_container
+from . import person_container
+from . import map_controller
 import pickle
 
 class Main:

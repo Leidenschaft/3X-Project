@@ -6,8 +6,8 @@
 from cocos.cocosnode import CocosNode
 from cocos.actions import RotateTo, RotateBy, Delay, CallFunc
 from cocos.sprite import Sprite
-from display_item.text import Text
-from utility import *
+from .text import Text
+from ..utility import *
 from cocos.director import director
 class Ring(CocosNode):
 

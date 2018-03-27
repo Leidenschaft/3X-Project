@@ -10,24 +10,24 @@ from cocos.director import director
 from cocos.scene import Scene
 from cocos.actions import CallFunc, MoveTo, Delay, FadeTo, FadeIn, FadeOut, Place
 from cocos.scenes import FadeTransition
-from display_item.sprite import Charactor, Cell
-from display_item.state2color import *
-from display_item.info import Personinfo, Battleinfo, Experience2
-from display_item.menu import *
-from display_item.background import Background
-from display_item.battle_scene import *
-from display_item.ring import PerSpr
-from display_item.getitem import Getitem
-from display_item.action_control import Sequencial, Graphic
-from display_item.dialog import Dialogscene
-from display_item.eventdisplay import *
+from .sprite import Charactor, Cell
+from .state2color import *
+from .info import Personinfo, Battleinfo, Experience2
+from .menu import *
+from .background import Background
+from .battle_scene import *
+from .ring import PerSpr
+from .getitem import Getitem
+from .action_control import Sequencial, Graphic
+from .dialog import Dialogscene
+from .eventdisplay import *
 import os
-import map_controller
-from global_vars import Main as Global
-from data_loader import Main as Data
-from person_container import Main as Person_Container
-from terrain_container import Main as Terrain_Container
-from wand import Type1, Type3, Type5
+from .. import map_controller
+from ..global_vars import Main as Global
+from ..data_loader import Main as Data
+from ..person_container import Main as Person_Container
+from ..terrain_container import Main as Terrain_Container
+from ..wand import Type1, Type3, Type5
 from typing import Dict
 
 class Arena(Layer):
